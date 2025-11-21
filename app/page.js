@@ -32,7 +32,7 @@ export default function Home() {
           "/Dessert.jpg",
           "/soup.jpg",
         ]}
-        link="https://instagram.com/chefemike"
+        link="https://www.instagram.com/_chefeukay?igsh=cGY1dTE3eXo2bWQy&utm_source=qr"
       />
 
       {/* TIKTOK */}
@@ -40,14 +40,14 @@ export default function Home() {
         title="TikTok"
         handle="@ChefEmike"
         subtitle="Watch behind the scenes"
-        videoSrc="/pizza.mp4"
+        videoSrc="/showcase.mp4"
         images={[
           "/Chef.jpg",
           "/pizza.jpg",
           "/Dessert.jpg",
           "/soup.jpg",
         ]}
-        link="https://tiktok.com/@chefemike"
+        link="https://www.tiktok.com/@_chefeukay?_r=1&_t=ZS-91aYyLYZH5c"
       />
 
       {/* FACEBOOK */}
@@ -55,14 +55,14 @@ export default function Home() {
         title="Facebook"
         handle="Chef Emike"
         subtitle="Join the community!"
-        videoSrc="/pizza.mp4"
+        videoSrc="/fb/fbv.mp4"
         images={[
           "/Chef.jpg",
           "/pizza.jpg",
           "/Dessert.jpg",
           "/soup.jpg",
         ]}
-        link="https://facebook.com/chefemike"
+        link="https://www.facebook.com/share/1FcowsRq6s/?mibextid=wwXIfr"
       />
 
       <ContactForm />

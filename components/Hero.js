@@ -44,9 +44,9 @@ export default function Hero() {
     return count;
   };
 
-  const yearsCount = useCounter(5, 2000, isInView);
-  const clientsCount = useCounter(100, 2500, isInView);
-  const dishesCount = useCounter(500, 2800, isInView);
+  const yearsCount = useCounter(4, 2000, isInView);
+  const clientsCount = useCounter(20, 2500, isInView);
+  const dishesCount = useCounter(100, 2800, isInView);
 
   // Auto-cycle every 5 seconds
   useEffect(() => {

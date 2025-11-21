@@ -23,7 +23,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <span className="text-3xl font-bold bg-gradient-to-r from-amber-900 to-orange-500 bg-clip-text text-transparent">
-              Chef Emike
+              Chef Eucharia
             </span>
           </div>
 

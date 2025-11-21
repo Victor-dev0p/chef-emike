@@ -6,9 +6,9 @@ import { FaInstagram, FaTiktok, FaFacebook } from 'react-icons/fa6';
 
 export default function Footer() {
   const socials = [
-    { icon: FaInstagram, url: 'https://instagram.com/chefemike' },
-    { icon: FaTiktok, url: 'https://tiktok.com/@chefemike' },
-    { icon: FaFacebook, url: 'https://facebook.com/chefemike' },
+    { icon: FaInstagram, url: 'https://www.instagram.com/_chefeukay?igsh=cGY1dTE3eXo2bWQy&utm_source=qr' },
+    { icon: FaTiktok, url: 'https://www.tiktok.com/@_chefeukay?_r=1&_t=ZS-91aYyLYZH5c' },
+    { icon: FaFacebook, url: 'https://www.facebook.com/share/1FcowsRq6s/?mibextid=wwXIfr' },
   ];
 
   const currentYear = new Date().getFullYear();

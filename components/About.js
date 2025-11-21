@@ -66,7 +66,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <span className="bg-gradient-to-r from-amber-900 to-orange-500 bg-clip-text text-transparent">
-                About Chef Emike
+                About Chef Eucharia
               </span>
             </motion.h2>
 
@@ -77,7 +77,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                With over 15 years of experience in fine dining and contemporary cuisine, I specialize in creating memorable culinary experiences that celebrate life's special moments. My journey in cooking started with a passion for flavors and has evolved into a commitment to excellence.
+                My name is Eucharia, a chef with over four years of professional experience — but my love for food began at age seven, following my mum to her canteen in the barracks. The sights and aromas of those early days sparked the passion that still drives me.
               </motion.p>
 
               <motion.p
@@ -86,7 +86,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                My approach combines classic French techniques with innovative modern twists, always sourcing the finest local and international ingredients. Every dish is a story—a narrative of dedication, creativity, and love for what I do.
+                Cooking is more than a skill for me; it’s my creative outlet. The kitchen is where I blend culture, flavor, and emotion into dishes that tell a story and make people feel something special.
               </motion.p>
 
               <motion.p
@@ -95,7 +95,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                I believe that food is more than just sustenance; it's a celebration of culture, connection, and joy. Whether it's a intimate dinner for two or a grand celebration for hundreds, I bring the same passion and precision to every plate.
+                Over the years, I’ve developed a strong command of different culinary styles, consistently crafting meals that are flavorful and visually appealing. My goal is simple: to create memorable, heartfelt dining experiences through every plate I serve.
               </motion.p>
             </div>
 

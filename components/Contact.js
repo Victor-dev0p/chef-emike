@@ -362,7 +362,7 @@ export default function Contact() {
           >
             <p className="text-3xl mb-2">📧</p>
             <p className="text-amber-900 font-semibold text-sm mb-1">Email</p>
-            <p className="text-orange-600 text-sm">Euchariaemike@gmail.com</p>
+            <p className="text-orange-600 text-sm">euchariaemike@gmail.com</p>
           </motion.div>
 
           <motion.div

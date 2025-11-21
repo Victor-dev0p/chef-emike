@@ -85,7 +85,7 @@ export default function FloatingButtons() {
               aria-label="Open menu"
             >
               <img
-                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&h=200&fit=crop"
+                src="/Chef.jpg"
                 alt="Chef Emike"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
@@ -144,13 +144,13 @@ export default function FloatingButtons() {
               >
                 <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-orange-400">
                   <img
-                    src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=80&h=80&fit=crop"
+                    src="/Chef.jpg"
                     alt="Chef Emike"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
-                  <h3 className="font-bold text-amber-900">Chef Emike</h3>
+                  <h3 className="font-bold text-amber-900">Chef Eucharia</h3>
                   <p className="text-xs text-orange-600">Culinary Excellence</p>
                 </div>
               </motion.div>
