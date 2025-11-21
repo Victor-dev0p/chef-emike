@@ -1,30 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Play } from "lucide-react";
 
 export default function Gallery() {
   const [selected, setSelected] = useState(null);
   const [shuffledImages, setShuffledImages] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(null);
 
-  // Sample images with descriptions added
-  const galleryImages = [
-    { src: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400&h=600", title: "Nautical Wedding Cake", description: "Elegant maritime-inspired design", height: 300 },
-    { src: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300", title: "Classic White Tiered", description: "Timeless sophistication", height: 200 },
-    { src: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=400&h=400", title: "Rustic Naked Cake", description: "Natural beauty with fresh florals", height: 250 },
-    { src: "/services/Naked1.jpg", title: "Garden Wedding Cake", description: "Organic garden-inspired creation", height: 320 },
-    { src: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&h=350", title: "Anchor Theme Design", description: "Nautical charm and elegance", height: 220 },
-    { src: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300", title: "Outdoor Naked Cake", description: "Perfect for garden celebrations", height: 200 },
-    { src: "https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?w=400&h=600", title: "Rustic Display Setup", description: "Beautifully styled presentation", height: 350 },
-    { src: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=400", title: "Simple White Elegance", description: "Pure and minimalist design", height: 240 },
-    { src: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&h=300", title: "Minimalist Wedding", description: "Clean lines and sophistication", height: 190 },
-    { src: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=400&h=550", title: "Floral Buttercream", description: "Delicate buttercream artistry", height: 310 },
-    { src: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=400&h=350", title: "Berry Topped Cake", description: "Fresh seasonal berries", height: 230 },
-    { src: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=400&h=400", title: "White Rose Cake", description: "Classic romance and beauty", height: 260 },
+  // Gallery items with both images and videos
+  const galleryItems = [
+    { type: "image", src: "/gallery/aweplate.jpg", title: "Nautical Wedding Cake", description: "Elegant maritime-inspired design", height: 300 },
+    { type: "image", src: "/gallery/gal.jpg", title: "Classic White Tiered", description: "Timeless sophistication", height: 200 },
+    { type: "image", src: "/gallery/gale1.jpg", title: "Rustic Naked Cake", description: "Natural beauty with fresh florals", height: 250 },
+    { type: "video", src: "/gallery/tiktok.mp4", thumbnail: "/gallery/gal3.jpg", title: "Cooking Process", description: "Watch the magic happen", height: 320 },
+    { type: "image", src: "/gallery/galepl.jpg", title: "Anchor Theme Design", description: "Nautical charm and elegance", height: 220 },
+    { type: "image", src: "/gallery/gal1.jpg", title: "Outdoor Naked Cake", description: "Perfect for garden celebrations", height: 200 },
+    { type: "video", src: "/gallery/stirfry.mp4", thumbnail: "/gallery/galp1.jpg", title: "Plating Technique", description: "Culinary artistry in action", height: 350 },
+    { type: "image", src: "/gallery/galpot.jpg", title: "Rustic Display Setup", description: "Beautifully styled presentation", height: 350 },
+    { type: "image", src: "/gallery/galp.jpg", title: "Simple White Elegance", description: "Pure and minimalist design", height: 240 },
+    { type: "image", src: "/gallery/gal4.jpg", title: "Minimalist Wedding", description: "Clean lines and sophistication", height: 190 },
+    { type: "image", src: "/gallery/plateg.jpg", title: "Floral Buttercream", description: "Delicate buttercream artistry", height: 310 },
+    { type: "image", src: "/gallery/fineplate.jpg", title: "Berry Topped Cake", description: "Fresh seasonal berries", height: 230 },
   ];
 
   useEffect(() => {
-    const shuffled = [...galleryImages].sort(() => Math.random() - 0.5);
+    const shuffled = [...galleryItems].sort(() => Math.random() - 0.5);
     setShuffledImages(shuffled);
   }, []);
 
@@ -70,7 +71,7 @@ export default function Gallery() {
 
   return (
     <div id="gallery" className="min-h-screen bg-white">
-      {/* 1. GALLERY HEADER - Updated */}
+      {/* GALLERY HEADER */}
       <div className="py-16 px-4 md:px-8">
         <motion.div
           className="text-center mb-12"
@@ -86,7 +87,7 @@ export default function Gallery() {
           <p className="text-xl text-amber-800">A showcase of culinary artistry and passion</p>
         </motion.div>
 
-        {/* 2. MASONRY GRID */}
+        {/* MASONRY GRID */}
         <div className="max-w-4xl mx-auto">
           <div className="columns-2 md:columns-3 lg:columns-4 gap-3 md:gap-4">
             {shuffledImages.map((item, index) => (
@@ -104,13 +105,30 @@ export default function Gallery() {
                   ease: [0.25, 0.1, 0.25, 1],
                 }}
               >
-                <img
-                  src={item.src}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                />
+                {/* Display image or video thumbnail */}
+                {item.type === "image" ? (
+                  <img
+                    src={item.src}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  />
+                ) : (
+                  <>
+                    <img
+                      src={item.thumbnail}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                    />
+                    {/* Play Icon for Videos */}
+                    <div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/30 transition-colors duration-300">
+                      <div className="bg-orange-500 hover:bg-orange-600 rounded-full p-3 transform group-hover:scale-110 transition-transform duration-300">
+                        <Play className="w-6 h-6 text-white fill-white" />
+                      </div>
+                    </div>
+                  </>
+                )}
 
-                {/* Updated Overlay with gradient and description */}
+                {/* Overlay with gradient and description */}
                 <div className="absolute inset-0 bg-gradient-to-t from-orange-900/90 via-orange-900/50 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <h3 className="text-white text-lg md:text-xl font-bold mb-1">
                     {item.title}
@@ -139,7 +157,7 @@ export default function Gallery() {
             {/* Close Button */}
             <button
               aria-label="Close"
-              className="absolute top-4 right-4 md:top-6 md:right-6 text-white hover:text-[#FA812F] text-3xl md:text-4xl font-light z-[60] transition-colors"
+              className="absolute top-4 right-4 md:top-6 md:right-6 text-white hover:text-orange-500 text-3xl md:text-4xl font-light z-[60] transition-colors"
               onClick={closeModal}
             >
               ×
@@ -147,8 +165,8 @@ export default function Gallery() {
 
             {/* Prev */}
             <button
-              aria-label="Previous image"
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-[#FA812F]/20 hover:bg-[#FA812F]/40 text-white text-2xl md:text-3xl p-2 rounded-full z-[60] transition-all"
+              aria-label="Previous item"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-orange-500/20 hover:bg-orange-500/40 text-white text-2xl md:text-3xl p-2 rounded-full z-[60] transition-all"
               onClick={handlePrev}
             >
               &larr;
@@ -156,14 +174,14 @@ export default function Gallery() {
 
             {/* Next */}
             <button
-              aria-label="Next image"
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-[#FA812F]/20 hover:bg-[#FA812F]/40 text-white text-2xl md:text-3xl p-2 rounded-full z-[60] transition-all"
+              aria-label="Next item"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-orange-500/20 hover:bg-orange-500/40 text-white text-2xl md:text-3xl p-2 rounded-full z-[60] transition-all"
               onClick={handleNext}
             >
               &rarr;
             </button>
 
-            {/* Image */}
+            {/* Display Image or Video */}
             <motion.div
               className="relative w-full max-w-5xl h-[70vh] md:h-[80vh] mx-auto px-4 md:px-20"
               onClick={(e) => e.stopPropagation()}
@@ -173,11 +191,20 @@ export default function Gallery() {
               transition={{ duration: 0.3 }}
               key={currentIndex}
             >
-              <img
-                src={selected.src}
-                alt={selected.title}
-                className="w-full h-full object-contain"
-              />
+              {selected.type === "image" ? (
+                <img
+                  src={selected.src}
+                  alt={selected.title}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <video
+                  src={selected.src}
+                  controls
+                  autoPlay
+                  className="w-full h-full object-contain"
+                />
+              )}
             </motion.div>
 
             {/* Title and Description */}
