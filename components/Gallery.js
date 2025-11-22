@@ -10,18 +10,21 @@ export default function Gallery() {
 
   // Gallery items with both images and videos
   const galleryItems = [
-    { type: "image", src: "/gallery/aweplate.jpg", title: "Nautical Wedding Cake", description: "Elegant maritime-inspired design", height: 300 },
+    { type: "image", src: "/gallery/gal1.jpg", title: "Nautical Wedding Cake", description: "Elegant maritime-inspired design", height: 300 },
     { type: "image", src: "/gallery/gal.jpg", title: "Classic White Tiered", description: "Timeless sophistication", height: 200 },
-    { type: "image", src: "/gallery/gale1.jpg", title: "Rustic Naked Cake", description: "Natural beauty with fresh florals", height: 250 },
-    { type: "video", src: "/gallery/tiktok.mp4", thumbnail: "/gallery/gal3.jpg", title: "Cooking Process", description: "Watch the magic happen", height: 320 },
-    { type: "image", src: "/gallery/galepl.jpg", title: "Anchor Theme Design", description: "Nautical charm and elegance", height: 220 },
-    { type: "image", src: "/gallery/gal1.jpg", title: "Outdoor Naked Cake", description: "Perfect for garden celebrations", height: 200 },
-    { type: "video", src: "/gallery/stirfry.mp4", thumbnail: "/gallery/galp1.jpg", title: "Plating Technique", description: "Culinary artistry in action", height: 350 },
-    { type: "image", src: "/gallery/galpot.jpg", title: "Rustic Display Setup", description: "Beautifully styled presentation", height: 350 },
-    { type: "image", src: "/gallery/galp.jpg", title: "Simple White Elegance", description: "Pure and minimalist design", height: 240 },
-    { type: "image", src: "/gallery/gal4.jpg", title: "Minimalist Wedding", description: "Clean lines and sophistication", height: 190 },
-    { type: "image", src: "/gallery/plateg.jpg", title: "Floral Buttercream", description: "Delicate buttercream artistry", height: 310 },
-    { type: "image", src: "/gallery/fineplate.jpg", title: "Berry Topped Cake", description: "Fresh seasonal berries", height: 230 },
+    { type: "image", src: "/gallery/gal2.jpg", title: "Rustic Naked Cake", description: "Natural beauty with fresh florals", height: 250 },
+    { type: "video", src: "/gallery/galv.mp4", thumbnail: "/gallery/gal3.jpg", title: "Cooking Process", description: "Watch the magic happen", height: 320 },
+    { type: "image", src: "/gallery/gal3.jpg", title: "Anchor Theme Design", description: "Nautical charm and elegance", height: 220 },
+    { type: "image", src: "/gallery/gal4.jpg", title: "Outdoor Naked Cake", description: "Perfect for garden celebrations", height: 200 },
+    { type: "video", src: "/gallery/galvi.mp4", thumbnail: "/gallery/fish.jpg", title: "Plating Technique", description: "Culinary artistry in action", height: 350 },
+    { type: "image", src: "/gallery/pan.jpg", title: "Rustic Display Setup", description: "Beautifully styled presentation", height: 350 },
+    { type: "image", src: "/gallery/galbean.jpg", title: "Simple White Elegance", description: "Pure and minimalist design", height: 240 },
+    { type: "image", src: "/gallery/creamy.jpg", title: "Minimalist Wedding", description: "Clean lines and sophistication", height: 190 },
+    { type: "image", src: "/gallery/sereren.jpg", title: "Floral Buttercream", description: "Delicate buttercream artistry", height: 310 },
+    { type: "image", src: "/gallery/galspagb.jpg", title: "Berry Topped Cake", description: "Fresh seasonal berries", height: 230 },
+    { type: "image", src: "/gallery/likemoi.jpg", title: "Berry Topped ", description: "Fresh seasonal berries", height: 200 },
+    { type: "video", src: "/gallery/galvid.mp4", thumbnail: "/gallery/thumbnail.jpg", title: "Berry Topped CakE", description: "Fresh seasonal berries", height: 300 },
+    { type: "image", src: "/gallery/riceshape.jpg", title: "Berry Topped C", description: "Fresh seasonal berries", height: 280 },
   ];
 
   useEffect(() => {

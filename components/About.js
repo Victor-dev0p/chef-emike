@@ -43,7 +43,7 @@ export default function About() {
   const statsRef = useRef(null);
   const isStatsInView = useInView(statsRef, { once: true, margin: "-100px" });
   
-  const yearsCount = useCounter(5, 1, isStatsInView);
+  const yearsCount = useCounter(4, 1, isStatsInView);
   const starsCount = useCounter(5, 1, isStatsInView);
 
   return (

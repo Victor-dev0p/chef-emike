@@ -13,36 +13,36 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      role: 'Wedding Bride',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-      text: 'Chef Emike made our wedding day unforgettable. The food was absolutely divine, and the presentation was impeccable. Every guest is still talking about it!',
+      name: 'Fejiro Bini',
+      role: 'Corporate Executive',
+      image: '/feji.jpg',
+      text: 'As a busy executive, cooking was never an option. Chef Emike transformed my life by delivering fresh, healthy meals in bulk every week. No more takeout stress—just nutritious, delicious food ready to go. Game changer!',
       rating: 5,
       gradient: 'from-pink-500 to-rose-500'
     },
     {
       id: 2,
-      name: 'Marcus Chen',
+      name: 'Kolade Kayode',
       role: 'Corporate Executive',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      image: '/kk.jpg',
       text: 'We hired Chef Emike for our company retreat. The private dinner experience was world-class. Professional, creative, and delicious—highly recommended!',
       rating: 5,
       gradient: 'from-blue-500 to-cyan-500'
     },
     {
       id: 3,
-      name: 'Amara Okafor',
+      name: 'Victor Anthony',
       role: 'Food Enthusiast',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
+      image: '/me.jpg',
       text: 'I took Chef Emike\'s cooking class and learned so much! The techniques, tips, and personalized attention made it one of the best investments in myself.',
       rating: 5,
       gradient: 'from-purple-500 to-indigo-500'
     },
     {
       id: 4,
-      name: 'David & Lisa',
+      name: 'Michael & Queen',
       role: 'Anniversary Celebration',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+      image: '/tee.jpg',
       text: 'Our anniversary dinner was the most romantic evening we\'ve had in years. Chef Emike\'s attention to detail and flavors created magic on our plates.',
       rating: 5,
       gradient: 'from-orange-500 to-amber-500'

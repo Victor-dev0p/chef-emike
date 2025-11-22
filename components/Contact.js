@@ -284,10 +284,7 @@ export default function Contact() {
                       }}
                     >
                       <option value="">Select a service...</option>
-                      <option value="Private Dinner">Private Dinner</option>
-                      <option value="Cooking Class">Cooking Class</option>
-                      <option value="Event Catering">Event Catering</option>
-                      <option value="Pop-up Event">Pop-up Event</option>
+                      <option value="Bespoke Celebrations">Bespoke Celebrations</option>
                       <option value="Meal Preparation">Meal Preparation</option>
                       <option value="Culinary Consulting">Culinary Consulting</option>
                     </select>

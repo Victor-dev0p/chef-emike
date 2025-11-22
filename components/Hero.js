@@ -8,7 +8,7 @@ export default function Hero() {
   // 2 images and 1 video
   const media = [
     { type: 'image', src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop' },
-    { type: 'video', src: '/pizza.mp4' },
+    { type: 'video', src: '/hero.mp4' },
     { type: 'image', src: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&h=1080&fit=crop' },
   ];
 

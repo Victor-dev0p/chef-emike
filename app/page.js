@@ -11,9 +11,9 @@ import FloatingButtons from '@/components/FloatingButtons'
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full overflow-x-hidden">
       <Navigation />
-      <FloatingButtons/>
+      <FloatingButtons />
       <Hero />
       <About />
       <Gallery />
@@ -25,7 +25,7 @@ export default function Home() {
         title="Instagram"
         handle="@ChefEmike"
         subtitle="Follow us for more updates!"
-        videoSrc="/pizza.mp4"
+        videoSrc="/ig/ig.mp4"
         images={[
           "/Chef.jpg",
           "/pizza.jpg",
@@ -40,7 +40,7 @@ export default function Home() {
         title="TikTok"
         handle="@ChefEmike"
         subtitle="Watch behind the scenes"
-        videoSrc="/showcase.mp4"
+        videoSrc="/tiktok/tik.mp4"
         images={[
           "/Chef.jpg",
           "/pizza.jpg",
@@ -67,6 +67,6 @@ export default function Home() {
 
       <ContactForm />
       <Footer />
-    </>
+    </div>
   )
 }
